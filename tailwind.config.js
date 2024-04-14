@@ -24,11 +24,9 @@ export default {
         button: '#e6e5e5',
         input: '#ededed',
         card: '#f3f2f2',
+        surface: '#fafafa',
+        white: '#ffffff',
       },
-
-      surface: '#fafafa',
-
-      white: '#ffffff',
     },
 
     extend: {

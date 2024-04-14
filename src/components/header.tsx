@@ -22,7 +22,7 @@ export const Header = () => {
   }, [])
 
   return (
-    <header className="flex items-center justify-between px-40 py-8">
+    <header className="flex items-center justify-between bg-base-surface px-40 py-8">
       <Link to={'/'}>
         <LogoImage />
       </Link>
@@ -32,7 +32,7 @@ export const Header = () => {
           <PinIcon />
           {userLocation?.city}, {userLocation?.region}
         </span>
-        <button className="flex items-center justify-center gap-1 rounded-md bg-yellow-weak p-2">
+        <button className="flex items-center justify-center gap-1 rounded-md bg-yellow-weak p-2 text-yellow-strong">
           <CartIcon />
         </button>
       </section>
