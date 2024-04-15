@@ -5,9 +5,13 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { CartIcon } from '@/assets/icon/cart'
 import { Link } from 'react-router-dom'
+import { cartAtom } from '@/atoms/global'
+import { useAtomValue } from 'jotai'
+import { toast } from 'sonner'
 
 export const Header = () => {
   const [userLocation, setUserLocation] = useState<GetUserLocationResponse>()
+  const cart = useAtomValue(cartAtom)
 
   const getUserLocation = async () => {
     const { data } = await axios.get<GetUserLocationResponse>(
@@ -32,7 +36,17 @@ export const Header = () => {
           <PinIcon />
           {userLocation?.city}, {userLocation?.region}
         </span>
-        <button className="flex items-center justify-center gap-1 rounded-md bg-yellow-weak p-2 text-yellow-strong">
+        <button
+          onClick={() => toast.success('Carrinho aberto')}
+          className="relative flex items-center justify-center gap-1 rounded-md bg-yellow-weak p-2 text-yellow-strong"
+        >
+          {cart.length > 0 && (
+            <span className="absolute -right-2 -top-2 flex size-5 items-center justify-center rounded-full bg-yellow-strong ">
+              <p className="font-roboto text-xs font-bold text-base-white">
+                {cart.length}
+              </p>
+            </span>
+          )}
           <CartIcon />
         </button>
       </section>

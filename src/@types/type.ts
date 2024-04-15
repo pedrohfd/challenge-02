@@ -3,10 +3,21 @@ export interface GetUserLocationResponse {
   region: string
 }
 
-export interface ProductCartProps {
+export interface ProductCardProps {
+  id: string
   name: string
   description: string
   amount: number
   type: Array<string>
   image: string
+}
+
+export interface CartProps {
+  id: string
+  name: string
+  description: string
+  amount: number
+  type: Array<string>
+  image: string
+  quantity: number
 }

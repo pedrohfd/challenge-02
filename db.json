@@ -1,6 +1,7 @@
 {
   "coffees": [
     {
+      "id": "1d6e308b-b22f-42f7-8046-79bc3e3b6829",
       "name": "Expresso tradicional",
       "description": "O tradicional café feito com água quente e grãos moídos",
       "amount": 9.50,
@@ -10,6 +11,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117762/coffee-delivery/expresso.png"
     },
     {
+      "id": "b4fcda6e-0f5e-44c1-b46e-7352db85d31d",
       "name": "Expresso Americano",
       "description": "Expresso diluído, menos intenso que o tradicional",
       "amount": 7.90,
@@ -19,6 +21,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117762/coffee-delivery/americano.png"
     },
     {
+      "id": "a8fb52a4-04f3-4b03-8ae7-18bcfd9c2052",
       "name": "Expresso Cremoso",
       "description": "Café expresso tradicional com espuma cremosa",
       "amount": 9.50,
@@ -28,6 +31,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117763/coffee-delivery/expresso-cremoso.png"
     },
     {
+      "id": "0f32c5e5-8284-44bb-95b1-5f60c6fc55b5",
       "name": "Expresso Gelado",
       "description": "Bebida preparada com café expresso e cubos de gelo",
       "amount": 7.50,
@@ -38,6 +42,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117762/coffee-delivery/expresso-gelado.png"
     },
     {
+      "id": "a1d2f73b-8e01-4d6c-ae16-9b586d51cb07",
       "name": "Café com Leite",
       "description": "Meio a meio de expresso tradicional com leite vaporizado",
       "amount": 5.50,
@@ -48,6 +53,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117762/coffee-delivery/cafe-com-leite.png"
     },
     {
+      "id": "e5ee8122-2cf3-4039-b7cf-2f52d89829db",
       "name": "Latte",
       "description": "Uma dose de café expresso com o dobro de leite e espuma cremosa",
       "amount": 3.50,
@@ -58,6 +64,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117763/coffee-delivery/latte.png"
     },
     {
+      "id": "ff20618c-78c1-44d3-bfcf-6a6eb8691e7a",
       "name": "Capuccino",
       "description": "Bebida com canela feita de doses iguais de café, leite e espuma",
       "amount": 6.50,
@@ -68,6 +75,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117763/coffee-delivery/capuccino.png"
     },
     {
+      "id": "46f5eb4a-3173-4f2c-b8fa-b14474716e75",
       "name": "Macchiato",
       "description": "Café expresso misturado com um pouco de leite quente e espuma",
       "amount": 7.50,
@@ -78,6 +86,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117763/coffee-delivery/macchiato.png"
     },
     {
+      "id": "d7c725e3-3e32-465e-bc2b-5f059c4e7970",
       "name": "Mocaccino",
       "description": "Café expresso com calda de chocolate, pouco de leite e espuma",
       "amount": 8.50,
@@ -88,6 +97,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117763/coffee-delivery/mochaccino.png"
     },
     {
+      "id": "c02517ff-b8e4-41f8-a0e1-64e1d7b1cf39",
       "name": "Chocolate Quente",
       "description": "Bebida feita com chocolate dissolvido no leite quente e café",
       "amount": 6.00,
@@ -98,6 +108,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117763/coffee-delivery/chocolate-quente.png"
     },
     {
+      "id": "0c0a1f9e-f7c5-426a-9a18-8b8b8c2b23fc",
       "name": "Cubano",
       "description": "Drink gelado de café expresso com rum, creme de leite e hortelã",
       "amount": 12.50,
@@ -109,6 +120,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117763/coffee-delivery/cubano.png"
     },
     {
+      "id": "bb42de49-70f4-4e9d-8720-22a3a48291e1",
       "name": "Havaiano",
       "description": "Bebida adocicada preparada com café e leite de coco",
       "amount": 10.00,
@@ -118,6 +130,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117762/coffee-delivery/havaiano.png"
     },
     {
+      "id": "f2f5e7d5-1eb8-4660-80bc-d890e62119b0",
       "name": "Árabe",
       "description": "Bebida preparada com grãos de café árabe e especiarias",
       "amount": 11.00,
@@ -127,6 +140,7 @@
       "image": "https://res.cloudinary.com/dcreue5uu/image/upload/v1713117762/coffee-delivery/arabe.png"
     },
     {
+      "id": "3d5f3858-6e65-48cb-9f53-d79ab97c19af",
       "name": "Irlandês",
       "description": "Bebida a base de café, uísque irlandês, açúcar e chantilly",
       "amount": 15.00,
