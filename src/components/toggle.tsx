@@ -2,12 +2,18 @@ import { CreditIcon } from '@/assets/icon/credit'
 import { DebitIcon } from '@/assets/icon/debit'
 import { MoneyIcon } from '@/assets/icon/money'
 import * as ToggleGroupPrimitive from '@radix-ui/react-toggle-group'
+import { Dispatch, SetStateAction } from 'react'
 
-export const Toggle = () => {
+interface ToggleProps {
+  selectPaymentType: Dispatch<SetStateAction<string>>
+}
+
+export const Toggle = ({ selectPaymentType }: ToggleProps) => {
   return (
     <ToggleGroupPrimitive.Root
       type="single"
       className="flex items-center gap-3"
+      onValueChange={selectPaymentType}
     >
       <ToggleGroupPrimitive.Item
         value="credit"

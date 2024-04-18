@@ -15,11 +15,13 @@ export const Cart = () => {
     handleDecreaseQuantity,
     handleIncreaseQuantity,
     handleRemoveFromCart,
+    handleBuyProducts,
     cep,
     setCep,
     address,
     setAddress,
-    handleBuyProducts,
+    paymentType,
+    setPaymentType,
   } = useCartController()
 
   return (
@@ -128,10 +130,11 @@ export const Cart = () => {
           </span>
 
           <p className="mb-8 ml-[1.85rem] mt-1 font-roboto text-sm font-normal text-base-text">
-            O pagamento é feito na entrega. Escolha a forma que deseja pagar
+            Pagamento com dinheiro é feito na entrega. Escolha a forma que
+            deseja pagar
           </p>
 
-          <Toggle />
+          <Toggle selectPaymentType={setPaymentType} />
         </div>
       </section>
 
@@ -250,7 +253,8 @@ export const Cart = () => {
 
           <button
             onClick={handleBuyProducts}
-            className="flex h-[2.875rem] w-full items-center justify-center rounded-md bg-yellow-default px-2 py-3 font-roboto text-sm font-bold uppercase text-base-white transition-colors hover:bg-yellow-strong"
+            className="flex h-[2.875rem] w-full items-center justify-center rounded-md bg-yellow-default px-2 py-3 font-roboto text-sm font-bold uppercase text-base-white transition-colors hover:bg-yellow-strong disabled:cursor-not-allowed"
+            disabled={!cart.length || !cep || !address || !paymentType}
           >
             confirmar pedido
           </button>

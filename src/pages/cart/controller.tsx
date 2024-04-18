@@ -4,12 +4,15 @@ import { checkout } from '@/lib/checkout'
 import axios from 'axios'
 import { useAtom } from 'jotai'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
 
 export const useCartController = () => {
   const [cart, setCart] = useAtom(cartAtom)
   const [address, setAddress] = useState<AddressProps>()
   const [cep, setCep] = useState('')
+  const [paymentType, setPaymentType] = useState('')
+  const navigate = useNavigate()
 
   const handleIncreaseQuantity = (id: string) => {
     setCart((prevState) => {
@@ -66,6 +69,10 @@ export const useCartController = () => {
   }
 
   const handleBuyProducts = async () => {
+    if (paymentType === 'money') {
+      return navigate('/success')
+    }
+
     try {
       const checkoutItems = cart.map((item) => ({
         price: item.defaultPriceId,
@@ -101,11 +108,13 @@ export const useCartController = () => {
     handleIncreaseQuantity,
     handleDecreaseQuantity,
     handleRemoveFromCart,
+    handleBuyProducts,
     formatToCurrency,
     cep,
     setCep,
     address,
     setAddress,
-    handleBuyProducts,
+    paymentType,
+    setPaymentType,
   }
 }
