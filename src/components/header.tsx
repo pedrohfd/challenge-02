@@ -7,7 +7,6 @@ import { CartIcon } from '@/assets/icon/cart'
 import { Link } from 'react-router-dom'
 import { cartAtom } from '@/atoms/global'
 import { useAtomValue } from 'jotai'
-import { toast } from 'sonner'
 
 export const Header = () => {
   const [userLocation, setUserLocation] = useState<GetUserLocationResponse>()
@@ -27,7 +26,7 @@ export const Header = () => {
 
   return (
     <header className="flex items-center justify-between bg-base-surface px-40 py-8">
-      <Link to={'/'}>
+      <Link to="/">
         <LogoImage />
       </Link>
 
@@ -36,8 +35,8 @@ export const Header = () => {
           <PinIcon />
           {userLocation?.city}, {userLocation?.region}
         </span>
-        <button
-          onClick={() => toast.success('Carrinho aberto')}
+        <Link
+          to="/cart"
           className="relative flex items-center justify-center gap-1 rounded-md bg-yellow-weak p-2 text-yellow-strong"
         >
           {cart.length > 0 && (
@@ -48,7 +47,7 @@ export const Header = () => {
             </span>
           )}
           <CartIcon />
-        </button>
+        </Link>
       </section>
     </header>
   )

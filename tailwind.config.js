@@ -34,6 +34,10 @@ export default {
         roboto: ['Roboto', 'sans-serif'],
         baloo: ['"Baloo 2"', 'sans-serif'],
       },
+
+      height: {
+        header: 'calc(100vh - 104px)',
+      },
     },
   },
   plugins: [],
